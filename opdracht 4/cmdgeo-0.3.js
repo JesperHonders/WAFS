@@ -19,7 +19,7 @@
             updateMap: false
         },
         locationRow: [],
-        markerRow: [],
+        markerRow: []
     };
     
     // UTILITY TOOLS
@@ -47,7 +47,7 @@
             util.debugId = this.debugId;
             util.customDebugging = true;
         }
-    }
+    };
 
     var ET = new EventTarget();
         

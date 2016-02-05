@@ -2,7 +2,6 @@ Single Page Web App
 ===================
 
 **Emiel Zuurbier**  
-*500661361*
 
-Reviewed by Rover van Nispen
+Reviewed by Rover van Nispen & Roos Schuurmans
 ----------------------------

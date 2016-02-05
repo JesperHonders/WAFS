@@ -9,9 +9,9 @@
         init: function () {
             routes.init();
         }
-    },
+    };
         
-        routes = {
+    var routes = {
             init: function () {
                 window.location.hash = "1";
                 window.addEventListener('hashchange', function (event) {
@@ -19,9 +19,9 @@
                     sections.toggle(route);
                 });
             }
-        },
+        };
     
-        sections = {
+    var sections = {
             toggle: function (route) {
                 var section = document.querySelectorAll('section'),
                     links = document.querySelectorAll('nav ul li a'),

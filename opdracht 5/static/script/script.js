@@ -68,14 +68,17 @@
             microAjax('http://api.soundcloud.com/playlists/4565422?client_id=8ff8cbbd4addabd63eecc2ae59016952', function (res) {
                 var data = JSON.parse(res);
                 
+                // FILTER
+                var filtered = _.map(data.tracks, function (items) {
+                    return _.pick(items, 'title', 'artwork_url', 'genre', 'id', 'user_id');
+                });
+                  
                 var tracksData = {
                     artwork: data.artwork_url,
-                    genre: data.genre,
                     artist: data.user.username,
                     album: data.title,
                     tracks: data.tracks,
                     title: data.title,
-                    created: data.created_at,
                     link: data.permalink_url
                 };
                 

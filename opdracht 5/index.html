@@ -28,10 +28,10 @@
                     <h2>Home</h2>
                 </header>
                 <div class="content">
+                    <img data-bind="avatar"/>
                     <h3 data-bind="username"></h3>
                     <p data-bind="city"></p>
                     <p data-bind="country"></p>
-                    <img data-bind="avatar"/>
                 </div>
             </section>
             
@@ -58,11 +58,9 @@
                 </header>
                 <div class="content">
                     <img data-bind="artwork"/>
-                    <ul>
-                        <li data-bind="title"></li>
-                        <li data-bind="genre"></li>
-                        <li><a data-bind="link"></a></li>
-                    </ul>
+                    <h3 data-bind="title"></h3>
+                    <h4 data-bind="genre"></h4>
+                    <a data-bind="link"></a>
                 </div>
             </section>
             

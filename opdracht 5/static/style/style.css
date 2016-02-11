@@ -91,6 +91,21 @@ section {
     color: #f7f7f7;
 }
 
+section a {
+    color: #E88808;
+    opacity: 1;
+    text-decoration: none;
+}
+
+section a:hover {
+    opacity: 0.5;
+}
+
+section img {
+    float: left;
+    margin-right: 1em;
+}
+
 section header {
     flex: 1 1 100%;
     margin-bottom: 1em;
@@ -103,6 +118,7 @@ section .content {
 }
 
 section ul {
+    float: left;
     flex: 1;
 }
 

@@ -6,40 +6,78 @@
         <meta name="author" content="Emiel the ruler">
         <meta name="description" content="I am your leader">
         <link href='https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
         <link href="static/style/style.css" rel="stylesheet">
     </head>
     <body>
         <header>
-            <h1>SPA</h1>
+            <h1>Soundcloud <span>API</span></h1>
             <nav>
                 <ul>
-                    <li><a href="#1" class="active">Start</a></li>
-                    <li><a href="#2">Best Practices</a></li>
-                    <li><a href="#3">Other</a></li>
+                    <li><a href="#Home" class="active">Home</a></li>
+                    <li><a href="#Tracks">Tracks</a></li>
+                    <li><a href="#Upload">Upload</a></li>
                 </ul>
             </nav>
         </header>
         <main>
-            <section id="1" class="active">
-                <h2>Start</h2>
+            
+            <section id="Home" class="active">
+                <header>
+                    <h2>Home</h2>
+                </header>
+                <div class="content">
+                    <h3 data-bind="username"></h3>
+                    <p data-bind="city"></p>
+                    <p data-bind="country"></p>
+                    <img data-bind="avatar"/>
+                </div>
             </section>
-            <section id="2">
-                <h2>Best Practices</h2>
-                <ul>
-                    <li>Don't use global variables/objects</li>
-                    <li>Declare variables at top of scope</li>
-                    <li>Use short clear meaningful names (English)</li>
-                    <li>Work in strict mode</li>
-                    <li>camelCase your code if(code != Constructor || CONSTANTS)</li>
-                    <li>Place external scripts at the bottom of the page</li>
-                    <li>Indent your code</li>
-                </ul>
-
+            
+            <section id="Tracks">
+                <header>
+                    <h2>Tracks</h2>
+                </header>
+                <div class="content">
+                    <div class="header">
+                        <img data-bind="artwork"/>
+                        <h3 class="title"></h3>
+                        <h4 class="artist"></h4>
+                        <span data-bind="created"></span>
+                    </div>
+                    <ul data-bind="tracks">
+                        <li><a data-bind="title"></a></li>
+                    </ul>
+                </div>
             </section>
-            <section id="3">
-                <h2>Other</h2>
+            
+            <section id="Detail">
+                <header>
+                    <h2>Detail</h2>
+                </header>
+                <div class="content">
+                    <img data-bind="artwork"/>
+                    <ul>
+                        <li data-bind="title"></li>
+                        <li data-bind="genre"></li>
+                        <li><a data-bind="link"></a></li>
+                    </ul>
+                </div>
             </section>
+            
+            <section id="Upload">
+                <header>
+                    <h2>Upload</h2>
+                </header>
+            </section>
+            
         </main>
+        <script src="static/script/routie.js"></script>
+        <script src="static/script/transparency.js"></script>
+        <script src="static/script/microAjax.js"></script>
+        <script src="static/script/underscore.js"></script>
+        <script src="https://connect.soundcloud.com/sdk/sdk-3.0.0.js"></script>
         <script src="static/script/script.js"></script>
     </body>
 </html>

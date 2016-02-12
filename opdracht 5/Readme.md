@@ -3,10 +3,16 @@ Single Page Web App
 
 **Emiel Zuurbier**  
 
-Reviewed by Rover van Nispen & Roos Schuurmans
+Reviewed by
 ----------------------------------------------
+
+**Week 1:**  
+Rover van Nispen & Roos Schuurman  
+
+**Week 2:**  
+
 
 Liveview
 --------
 
-http://emielzuurbier.github.io/WAFS
+http://emielzuurbier.github.io/WAFS/opdracht%205/
